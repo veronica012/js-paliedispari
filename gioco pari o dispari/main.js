@@ -9,7 +9,9 @@ console.log(scelta_utente);
 scelta_utente = scelta_utente.toLowerCase();
 var numero_computer = (Math.floor(Math.random() * 5) + 1);
 console.log(numero_computer);
-var somma = numero_utente + numero_computer;
+// var somma = numero_utente + numero_computer;
+// console.log(somma);
+var somma = sommaNumeri(numero_utente, numero_computer);
 console.log(somma);
 if (somma % 2 == 0) {
     if ( scelta_utente == 'pari') {
@@ -24,4 +26,9 @@ if (somma % 2 == 0) {
         console.log('hai perso');
     }
 
+}
+
+function sommaNumeri(numero1, numero2) {
+    var risultato = numero1 + numero2;
+    return risultato;
 }
